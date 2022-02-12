@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="MainPage.Specification21"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MainPage"
+             mc:Ignorable="d" 
+            d:DesignHeight="300" Width="160">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="85"/>
+
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FF141DD4"  Width="120"   />
+
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="内界限:" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Center"   />
+        <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="{x:Null}" FontSize="20" VerticalAlignment="Center" Margin="0,0,0,1" Height="24" />
+        <Border CornerRadius="5" Grid.Row="1" Grid.Column="1" BorderBrush="Gray" BorderThickness="2" Margin="0,0,0,1"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="外界限:" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Center"  />
+        <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="{x:Null}" FontSize="20" VerticalAlignment="Center"  Height="24" Margin="0,0,0,1" />
+        <Border CornerRadius="5" Grid.Row="2" Grid.Column="1" BorderBrush="Gray" BorderThickness="2" />
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="灰度阈值:" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Center"  />
+        <TextBox Grid.Row="3" Grid.Column="1" BorderBrush="{x:Null}" FontSize="20" VerticalAlignment="Center" Height="25"   />
+        <Border CornerRadius="5" Grid.Row="3" Grid.Column="1" BorderBrush="Gray" BorderThickness="2" />
+
+        <TextBlock Grid.Row="4" Grid.Column="0" FontSize="15" Text="设置规格:" HorizontalAlignment="Right" VerticalAlignment="Center" />
+        <TextBox Grid.Row="4" Grid.Column="1" BorderBrush="{x:Null}" FontSize="20" VerticalAlignment="Center"  Height="24" Margin="0,0,0,1"/>
+
+        <Border CornerRadius="5" Grid.Row="4" Grid.Column="1" BorderBrush="Gray" BorderThickness="2" />
+
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="实测数值:" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Center"  />
+        <TextBlock Grid.Row="5" Grid.Column="1" Text="0" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"    />
+        <Border CornerRadius="5" Grid.Row="5" Grid.Column="1" BorderBrush="Gray" BorderThickness="2" />
+
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="OK判定要求:" FontSize="15" VerticalAlignment="Center"  HorizontalAlignment="Right"  />
+        <ComboBox Grid.Row="6" Grid.Column="1" FontSize="10" VerticalAlignment="Center" >
+            <ComboBoxItem Content="实测&gt;规格" FontSize="10" IsSelected="True"/>
+            <ComboBoxItem Content="实测&lt;规格" FontSize="10"/>
+        </ComboBox>
+
+        <TextBlock Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2 " Text="波形图" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Bottom"  />
+        <Border Grid.Row="9" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="2" BorderBrush="Gray" BorderThickness="2" CornerRadius="10" />
+
+
+    </Grid>
+</UserControl>
